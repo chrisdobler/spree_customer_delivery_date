@@ -10,7 +10,7 @@
     $('.datepicker').pickadate({
       min: <%= (Spree::Config['customer_delivery_date_lead_time'].business_days.from_now.to_date - Time.now.to_date).to_i %>,
       max: 60,
-      disable: [6,7],
+      disable: [1,2,3,4,6,7],
       hiddenSuffix: '',
       formatSubmit: 'yyyy/mm/dd'
     });
