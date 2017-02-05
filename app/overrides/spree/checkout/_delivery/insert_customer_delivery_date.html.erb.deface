@@ -15,13 +15,5 @@
       formatSubmit: 'yyyy/mm/dd'
     });
 
-    <% unless @order.customer_delivery_date -%>
-      $("#customer_delivery_date_fields").hide();
-    <% end %>
-    $("#customer_delivery_date_label").click(function() {
-      $("#customer_delivery_date_fields").toggle( "fast", function() {
-        // Animation complete.
-      });
-    });
   </script>
 <% end %>
